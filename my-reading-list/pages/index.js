@@ -41,8 +41,7 @@ export default function Home({ books }) {
                 My reading list
               </h1>
               <p className="text-sm mt-1" style={{ color: 'var(--muted)' }}>
-                Books I've read — with honest reviews
-                  I've always had a love for reading — and I wanted somewhere to put my thoughts on everything I've read so I can look back on them properly. I only started this site in March 2026 and I've already read over 200 books, so detailed reviews will take a while to catch up — but I'm getting there!
+                I've always had a love for reading — and I wanted somewhere to put my thoughts on everything I've read so I can look back on them properly. I only started this site in March 2026 and I've already read over 200 books, so detailed reviews will take a while to catch up — but I'm getting there!
               </p>
             </div>
             <Link
