@@ -159,7 +159,7 @@ export default function Admin() {
                 <label className="block text-xs mb-1" style={{ color: 'var(--muted)' }}>Rating (1–5)</label>
                 <select value={form.rating} onChange={e => setForm({...form, rating: e.target.value})}
                   className="w-full border rounded-lg px-3 py-2 text-sm outline-none" style={{ borderColor: 'var(--border)' }}>
-                  {[5,4,3,2,1].map(n => <option key={n} value={n}>{'★'.repeat(n)} ({n})</option>)}
+                  {[5,4.5,4,3.5,3,2.5,2,1.5,1].map(n => <option key={n} value={n}>{'★'.repeat(n)} ({n})</option>)}
                 </select>
               </div>
               <div>
