@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { supabase } from '../lib/supabase'
 
-const GENRES = ['Fiction', 'Literary Fiction', 'Romance', 'Thriller', 'Horror', 'Crime', 'Fantasy', 'Sci-Fi', 'Classics', 'Young Adult', 'Mystery', 'Other']
+const GENRES = ['Fiction', 'Literary Fiction', 'Romance', 'Romantasy', 'Thriller', 'Horror', 'Crime', 'Fantasy', 'Sci-Fi', 'Classics', 'Young Adult', 'Mystery', 'Other']
 
 const EMPTY_FORM = {
   title: '', author: '', genre: 'Other',
