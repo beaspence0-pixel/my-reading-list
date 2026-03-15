@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { supabase } from '../lib/supabase'
 import BookCard from '../components/BookCard'
 
-const GENRES = ['All', 'Fiction', 'Literary Fiction', 'Romance', 'Thriller', 'Horror', 'Crime', 'Fantasy', 'Sci-Fi', 'Classics', 'Young Adult', 'Other']
+const GENRES = ['All', 'Fiction', 'Literary Fiction', 'Romance', 'Thriller', 'Horror', 'Crime', 'Fantasy', 'Sci-Fi', 'Classics', 'Young Adult', 'Mystery', 'Other']
 
 export default function Home({ books }) {
   const [activeGenre, setActiveGenre] = useState('All')
