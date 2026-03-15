@@ -159,7 +159,12 @@ export default function Admin() {
                 <label className="block text-xs mb-1" style={{ color: 'var(--muted)' }}>Rating (1–5)</label>
                 <select value={form.rating} onChange={e => setForm({...form, rating: e.target.value})}
                   className="w-full border rounded-lg px-3 py-2 text-sm outline-none" style={{ borderColor: 'var(--border)' }}>
-                  {[5,4.5,4,3.5,3,2.5,2,1.5,1].map(n => <option key={n} value={n}>{'★'.repeat(n)} ({n})</option>)}
+                 {[5,4.75,4.5,4.25,4,3.75,3.5,3.25,3,2.75,2.5,2.25,2,1.75,1.5,1.25,1].map(n => {
+  const full = Math.floor(n)
+  const decimal = n % 1
+  const fraction = decimal === 0.25 ? '¼' : decimal === 0.5 ? '½' : decimal === 0.75 ? '¾' : ''
+  return <option key={n} value={n}>{'★'.repeat(full)}{fraction} ({n})</option>
+})}
                 </select>
               </div>
               <div>
